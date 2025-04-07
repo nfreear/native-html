@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/nfreear/native-html.git"
   },
-  "description": "Stylesheet to easily position a native HTML <dialog> element on the page, to use as the basis for any modal overlay.",
+  "description": "Stylesheet to easily position a native HTML <dialog> element on the page, to use as the basis for any accessible modal overlay.",
   "keywords": [
     "accessibility",
     "CSS",

@@ -3,18 +3,18 @@
 
 # dialog-position #
 
-A stylesheet to easily position a native HTML `<dialog>` element on the page, to use as the basis for any modal overlay.
+A stylesheet to easily position a native HTML `<dialog>` element on the page, to use as the basis for any accessible modal overlay.
 
 ## `data-position` attribute
 
 The following values are supported:
 ```yaml
-# Full width or height:
+# Full width or height values:
 top
 bottom
 left
 right
-# Corner positions.
+# Corner position values:
 top-left
 top-right
 bottom-left
@@ -55,21 +55,23 @@ showModalPositioned('myDialogId', { position: 'bottom' });
 
 ## Why?
 
+Making modal dialogs accessible is not easy — see the [W3C’s][wai] [dialog.js][] for the [modal APG pattern][apg] for an example of what’s involved.
+
 Using a native `<dialog>` for the modal overlays in your web site or app has a number of benefits:
 
-* A clearly defined API,
+* A clearly defined [API][dlg],
 * [Well supported][cani] by browsers,
-* Built-in accessibility, including keyboard and screen reader accessibility.
-
-Making modal dialogs accessible is not easy - see the W3C's [dialog.js][] for their [modal APG pattern][apg].
+* Built-in [accessibility][], including keyboard and screen reader accessibility.
 
 [ci]: https://github.com/nfreear/native-html/actions/workflows/node.js.yml
 [ci-img]: https://github.com/nfreear/native-html/actions/workflows/node.js.yml/badge.svg
 
 [dlg]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
+[accessibility]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#accessibility
 [webpack]: https://webpack.js.org/
 [css-loader]: https://webpack.js.org/loaders/css-loader/
 [cani]: https://caniuse.com/dialog
+[wai]: https://www.w3.org/WAI/
 [apg]: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/
 [src:dialog.js]: https://www.w3.org/WAI/content-assets/wai-aria-practices/patterns/dialog-modal/examples/js/dialog.js
 [dialog.js]: https://github.com/w3c/aria-practices/blob/main/content/patterns/dialog-modal/examples/js/dialog.js
