@@ -13,6 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/nfreear/native-html.git"
   },
+  "homepage": "https://github.com/nfreear/native-html/tree/main/dialog/position#readme",
   "description": "Stylesheet to easily position a native HTML <dialog> element on the page, to use as the basis for any accessible modal overlay.",
   "keywords": [
     "accessibility",
@@ -23,5 +24,6 @@
     "dialog",
     "modal",
     "overlay"
-  ]
+  ],
+  "author": "Nick Freear"
 }
