@@ -1,7 +1,8 @@
 {
   "format": "compact",
+  "exclude-list": "node_modules",
   "ignore": [
-    "adjoining-classes"
+    "empty-rules"
   ],
   "warnings": [],
   "errors": []

@@ -1,6 +1,6 @@
 # https://github.com/actions/starter-workflows/blob/main/ci/node.js.yml
 
-name: Lint
+name: Node.js CI
 
 on: [push, pull_request]
 # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
@@ -9,6 +9,7 @@ env:
 
 jobs:
   lint:
+    name: CSS Lint
     runs-on: ubuntu-latest
 
     steps:
