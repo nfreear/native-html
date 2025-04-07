@@ -1,7 +1,25 @@
 
+[![Node.js CI][ci-img]][ci]
+
 # dialog-position #
 
 A stylesheet to easily position a native HTML `<dialog>` element on the page, to use as the basis for any modal overlay.
+
+## `data-position` attribute
+
+The following values are supported:
+```yaml
+# Full width or height:
+top
+bottom
+left
+right
+# Corner positions.
+top-left
+top-right
+bottom-left
+bottom-right
+```
 
 ## Usage
 
@@ -44,6 +62,9 @@ Using a native `<dialog>` for the modal overlays in your web site or app has a n
 * Built-in accessibility, including keyboard and screen reader accessibility.
 
 Making modal dialogs accessible is not easy - see the W3C's [dialog.js][] for their [modal APG pattern][apg].
+
+[ci]: https://github.com/nfreear/native-html/actions/workflows/node.js.yml
+[ci-img]: https://github.com/nfreear/native-html/actions/workflows/node.js.yml/badge.svg
 
 [dlg]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
 [webpack]: https://webpack.js.org/
