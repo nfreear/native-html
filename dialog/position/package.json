@@ -15,6 +15,7 @@
   },
   "description": "Stylesheet to easily position a native HTML <dialog> element on the page, to use as the basis for any modal overlay.",
   "keywords": [
+    "accessibility",
     "CSS",
     "stylesheet",
     "native",
