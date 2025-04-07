@@ -1,0 +1,8 @@
+{
+  "format": "compact",
+  "ignore": [
+    "adjoining-classes"
+  ],
+  "warnings": [],
+  "errors": []
+}
