@@ -12,7 +12,7 @@ A stylesheet to easily position a native HTML `<dialog>` element on the page, to
 
 The following values are supported for the `data-position` attribute:
 ```yaml
-# These result in a full width modal:
+# These values result in a full width modal:
 top
 bottom
 # These result in a full height modal:
@@ -61,14 +61,14 @@ showModal('myDialogId', { position: position.bottomRight });
 
 Making modal dialogs accessible is not easy — see the [W3C][wai]’s [dialog.js][] file for the [modal APG pattern][apg] for an example of what’s involved.
 
-Using a native `<dialog>` for the modal overlays in your web site or app has a number of benefits:
+Using a native `<dialog>` for the modal overlays in your web site or app has significant benefits:
 
 * A clearly defined [API][dlg],
 * Fully stylable with CSS,
 * [Well supported][cani] by browsers,
 * Built-in [accessibility][], including keyboard and screen reader accessibility.
 
-If you still prefer a non-native dialog, please consider using a library such as [Kitty Giraudel][kitty]’s [a11y-dialog][].
+If you still prefer a non-native dialog, please consider using a library built with accessibility in mind, such as [Kitty Giraudel][kitty]’s [a11y-dialog][].
 
 ## Acknowledgements
 
@@ -87,7 +87,7 @@ Thanks to contributors on [Stackoverflow][so] for inspiration!
 [webpack]: https://webpack.js.org/
 [css-loader]: https://webpack.js.org/loaders/css-loader/
 [cani]: https://caniuse.com/dialog
-  "Can I Use: dialog? — 96% support globally"
+  "Can I Use: dialog? — 96% support globally (April 2025)"
 [wai]: https://www.w3.org/WAI/
 [apg]: https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/
 [src:dialog.js]: https://www.w3.org/WAI/content-assets/wai-aria-practices/patterns/dialog-modal/examples/js/dialog.js
