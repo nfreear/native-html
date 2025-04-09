@@ -2,10 +2,11 @@
   "private": true,
   "scripts": {
     "start": "servor",
-    "lint": "csslint --config=csslint.json ."
+    "lint": "csslint --config=csslint.json . && semistandard"
   },
   "devDependencies": {
     "csslint": "^1.0.5",
+    "semistandard": "^17.0.0",
     "servor": "^4.0.2"
   }
 }
