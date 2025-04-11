@@ -1,0 +1,37 @@
+//
+// Position mixin.
+//
+// https://sass-lang.com/playground/#eJyVkcFqwzAQRO/+ikVJIYE0xIdeYgqmv9BjyUG2tq6ILSXSblsw+vdIxiZOemirm0b7dmZQnpfsEYSX3u89tliTdaLI5io5bZqoZeU7m5q0NeDPLB2+OFkfkVZLSXGmYsINLD9ly7iGPgMoHRK7OD1s2LI5syVciTdY9FcmwHO6D1yAg1gXWZh7xVAdGnq9tRzVaPhP82g1suFPORRW3NwVFkqSfDxZr1NCsQFB9pSAeMpOf2sD0yPMoxrZjekW/W+10uy0OAwMwJdW9LGHfLd7KKIQ46VNd58xgpUlst0P9mlCUzdt6pYVzsIKpWVrm1TptuNQ7gIKU7bC?s=L1C1-L29C1
+//
+
+@use "squareBrackets" as SB;
+
+@mixin position($element, $attribute) {
+
+  #{$element} {
+
+    &#{SB.has($attribute)} {
+      margin: 0;
+    }
+
+    &#{SB.equals($attribute, "top")} {
+      width: 100%;
+    }
+
+    &#{SB.equals($attribute, "bottom")} {
+      top: 100%;
+      transform: translateY(-100%);
+      width: 100%;
+    }
+
+    &#{SB.equals($attribute, "left")} {
+      height: 100%;
+    }
+
+    &#{SB.equals($attribute, "right")} {
+      height: 100%;
+      left: 100%;
+      transform: translateX(-100%);
+    }
+  }
+}

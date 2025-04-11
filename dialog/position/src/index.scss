@@ -1,0 +1,9 @@
+/*
+  Easily position the native HTML <dialog> element, using a 'data' attribute.
+
+  License: MIT.
+*/
+
+@use "positionMixin" as pos;
+
+@include pos.position("dialog", "data-position");

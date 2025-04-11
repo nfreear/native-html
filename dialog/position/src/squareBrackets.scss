@@ -1,0 +1,44 @@
+//
+// Functions to create square-bracket selectors (CSS: `[ attribute = value]`)
+//
+// @see https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+//
+
+// @use "sass:selector";
+@use "sass:string";
+
+@function squareBracket($attribute, $value) {
+  @return string.unquote("[ #{$attribute} = #{$value} ]");
+}
+
+@function elementSquareBracket($element, $attribute, $value) {
+  @return string.unquote("#{$element}[ #{$attribute} = #{$value} ]");
+}
+
+// --------------
+
+@function has($attribute) {
+  @return string.unquote("[ #{$attribute} ]");
+}
+
+@function equals($attribute, $value) {
+  @return string.unquote("[ #{$attribute} = '#{$value}' ]");
+}
+
+@function spaceMatch($attribute, $value) {
+  @return string.unquote("[ #{$attribute} ~= '#{$value}' ]");
+}
+
+@function contains($attribute, $value) {
+  @return string.unquote("[ #{$attribute} *= '#{$value}' ]");
+}
+
+@function startsWith($attribute, $value) {
+  @return string.unquote("[ #{$attribute} ^= '#{$value}' ]");
+}
+
+@function endsWith($attribute, $value) {
+  @return string.unquote("[ #{$attribute} $= '#{$value}' ]");
+}
+
+@debug equals("data-position", "top");
